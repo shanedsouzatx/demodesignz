@@ -42,8 +42,8 @@ export default function Location() {
               alt={location.city}
               width={500}
               height={350}
-              className="w-full constrast-75  backdrop-blur-[20px] h-64 object-cover transition-transform duration-700 group-hover:scale-150"
-            /> <div className="absolute inset-0 bg-black/25 backdrop-blur-[2px]"></div>
+              className="w-full constrast-75  backdrop-blur-[10px] h-64 object-cover transition-transform duration-700 group-hover:scale-150"
+            /> <div className="absolute inset-0 bg-black/10 backdrop-blur-[1.5px]"></div>
 
             <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4">
               <h3 className="text-white text-xl font-semibold">{location.city}</h3>
