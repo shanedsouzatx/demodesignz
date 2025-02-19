@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import './Footer.css'; // Ensure you import the CSS file
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   const [showPrivacyModal, setShowPrivacyModal] = useState(false);
@@ -29,18 +30,18 @@ const Footer: React.FC = () => {
             Stay connected with us through our social media channels.
           </p>
           <div className="social-icons">
-            <a href="#" aria-label="Facebook">
+            <Link href="#" aria-label="Facebook">
               <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" aria-label="Twitter">
+            </Link>
+            <Link href="#" aria-label="Twitter">
               <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" aria-label="Instagram">
+            </Link>
+            <Link href="#" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn">
+            </Link>
+            <Link href="#" aria-label="LinkedIn">
               <i className="fab fa-linkedin-in"></i>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -48,13 +49,13 @@ const Footer: React.FC = () => {
         <div className="footer-right">
           <nav className="footer-nav">
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/join-our-team">Join Our Team</a></li>
-              <li><a href="/legal-notice">Legal Notice</a></li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/services">Services</Link></li>
+              <li><Link href="/join-our-team">Join Our Team</Link></li>
+              <li><Link href="/legal-notice">Legal Notice</Link></li>
               <li>
-                <a
+                <Link
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
@@ -62,11 +63,11 @@ const Footer: React.FC = () => {
                   }}
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><Link href="/contact">Contact Us</Link></li>
               <li>
-                <a
+                <Link
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
@@ -74,14 +75,14 @@ const Footer: React.FC = () => {
                   }}
                 >
                   Terms &amp; Conditions
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
           <div className="cta-container">
-            <a href="/" className="cta-btn">
+            <Link href="/" className="cta-btn">
              Contact Us Now!
-            </a>
+            </Link>
           </div>
         </div>
       </div>

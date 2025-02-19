@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
   Tabs,
   TabsList,
@@ -39,13 +40,21 @@ const Hero = () => {
         py-16
         priority-1
       "
-      style={{ backgroundImage: "url('/images/hero.jpg')" }}
     >
+      {/* Background image using Next.js Image with priority */}
+      <Image
+        src="/images/hero.jpg"
+        alt="Hero Background"
+        fill
+        priority
+        className="object-cover"
+      />
+
       {/* Optional overlay for contrast */}
       <div className="absolute inset-0  bg-black/20" />
 
       {/* Content Container */}
-      <div className="relative z-10 max-w-5xl mx-auto px-1 sm:px-4 py-16 md:py-20 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-5xl mx-auto px-1 py-16 md:py-20 sm:px-6 lg:px-8">
         {/* White Box with Tabs */}
         <div className="bg-white rounded-md shadow-lg p-4 sm:p-6 md:p-8">
           <Tabs defaultValue="callDoctor" className="sm:space-y-6">

@@ -15,16 +15,18 @@ const Navbar = () => {
     <nav className="flex sticky items-center justify-between p-3 md:px-6 max-w-[1900px] mx-auto shadow-md bg-white w-full fixed top-0 z-50">
       {/* Left - Logo and Text */}
       <div className="flex items-center gap-2">
+      <Link href="/">
         <Image 
           src="/images/logo2.png" 
           alt="Logo" 
           width={40} 
           height={40} 
           className="md:w-[65px] contrast-200 transition-transform duration-200 hover:scale-110" 
-        />
-        <span className="font-bold text-xl md:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700 drop-shadow-md">
+          />
+          </Link>
+        <Link href="/"  className="font-bold text-xl md:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700 drop-shadow-md">
           Behavior Analysis & <br /> Therapy Partners
-        </span>
+        </Link>
       </div>
 
       {/* Center - Navigation Links (Desktop) */}
