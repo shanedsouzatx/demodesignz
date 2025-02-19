@@ -21,8 +21,8 @@ export default function Home() {
 <HeroHealthcare/>
 <FAQ/>
 <Testimonials/>
-<Location/>
-<Location1/>
+{/* <Location/> */}
+{/* <Location1/> */}
 <Location3/>
 
    </>
